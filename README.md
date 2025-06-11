@@ -51,3 +51,7 @@ POST /expenses
   "shared_with": ["Shantanu", "Sanket", "Om"],
   "split_type": "equal"
 }
+
+
+📬 Postman Collection:
+https://gist.github.com/shivajirp/6cc00aafee0db017c30fe06d4a48f099
