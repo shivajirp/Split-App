@@ -8,11 +8,11 @@ export const addExpense = async (req, res) => {
       paid_by,
       shared_with,
       split_type,
-      split_values,
+      // split_values,
     } = req.body;
 
     if (!amount || amount <= 0) {
-        return res.status(400).json({ success: false, message: "Amount must be a positive number" });
+        // return res.status(400).json({ success: false, message: "Amount must be a positive number" });
       }
       if (!description || description.trim().length === 0) {
         return res.status(400).json({ success: false, message: "Description is required" });
