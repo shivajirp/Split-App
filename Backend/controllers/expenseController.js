@@ -71,7 +71,7 @@ export const getAllExpenses = async (req, res) => {
     const expenses = await Expense.find().sort({ createdAt: -1 });
     res.json({ success: true, data: expenses });
   } catch (err) {
-    res.status(500).json({ success: false, message: "Server Error" });
+    // res.status(500).json({ success: false, message: "Server Error" });
   }
 };
 
