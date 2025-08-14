@@ -34,8 +34,8 @@ export const addExpense = async (req, res) => {
       amount <= 0 ||
       !description ||
       !paid_by ||
-      !Array.isArray(shared_with) ||
-      shared_with.length === 0
+      // !Array.isArray(shared_with) ||
+      // shared_with.length === 0
     ) {
       return res
         .status(400)
