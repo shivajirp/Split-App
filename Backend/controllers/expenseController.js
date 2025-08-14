@@ -12,13 +12,13 @@ export const addExpense = async (req, res) => {
     } = req.body;
 
     if (!amount || amount <= 0) {
-        return res.status(400).json({ success: false, message: "Amount must be a positive number" });
+        // return res.status(400).json({ success: false, message: "Amount must be a positive number" });
       }
       if (!description || description.trim().length === 0) {
-        return res.status(400).json({ success: false, message: "Description is required" });
+        // return res.status(400).json({ success: false, message: "Description is required" });
       }
       if (!paid_by || paid_by.trim().length === 0) {
-        return res.status(400).json({ success: false, message: "paid_by is required" });
+        // return res.status(400).json({ success: false, message: "paid_by is required" });
       }
       if (!Array.isArray(shared_with) || shared_with.length === 0) {
         return res.status(400).json({ success: false, message: "shared_with must be a non-empty array" });
