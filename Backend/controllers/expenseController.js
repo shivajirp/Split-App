@@ -6,9 +6,9 @@ export const addExpense = async (req, res) => {
       amount,
       description,
       paid_by,
-      // shared_with,
-      // split_type,
-      // split_values,
+      shared_with,
+      split_type,
+      split_values,
     } = req.body;
 
     if (!amount || amount <= 0) {
