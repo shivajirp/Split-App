@@ -34,7 +34,7 @@ export const addExpense = async (req, res) => {
         paid_by,
         shared_with,
         split_type,
-        split_values,
+        // split_values,
       });
       
 
