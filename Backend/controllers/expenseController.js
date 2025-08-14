@@ -27,6 +27,15 @@ export const addExpense = async (req, res) => {
       if ((split_type === "percentage" || split_type === "exact") && (!split_values || split_values.length !== shared_with.length)) {
         return res.status(400).json({ success: false, message: "split_values must match shared_with count" });
       }
+
+      console.log("Expense data:", {
+        amount,
+        description,
+        paid_by,
+        shared_with,
+        split_type,
+        split_values,
+      });
       
 
     if (
